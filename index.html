@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="舊宿舍到創意聚落，一起探索臺中老屋與青年創業交織的城市風景，透過清單、表格、照片和影片閱讀城市故事。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="李宜蓁">
+    <!-- robots 表達索引意圖；本機檔案不會因此自動被搜尋引擎收錄。 -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph 提供分享摘要，不是搜尋排名保證。 -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="審計新村報導｜城市裡的百年風景">
+    <meta property="og:description" content="從舊宿舍到創意聚落，一起探索臺中老屋與青年創業交織的城市風景，搭配景點表格、照片、影片及位置地圖。">
+    <meta property="og:image" content="https://yuki.tw/wp-content/uploads/2018/09/20221028232327_99.jpg">
+    <meta property="og:image:alt" content="審計新村">
+    <meta property="article:published_time" content="2026-10-07">
+    <meta property="article:modified_time" content="2026-10-14">
+    <!-- 正式上線後，再以真實公開網址加入 canonical 及 og:url；不要使用本機或虛構網址。 -->
+    <title>台中審計新村：老宿舍的新創聚落</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第五次作業：一頁式審計新村報導。
+        本範例僅使用 HTML，以標題層次、分隔線、圖說與資料分組整理閱讀節奏。
+        不加入 style 元素、style 屬性、外部樣式表或自寫 JavaScript。
+        YouTube 與 Google 地圖是外部服務，服務內部可能使用自己的 CSS 與 JavaScript。
+        語意元素表達內容用途，不會自動產生配色、欄位排版或響應式設計。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>台中審計新村：老宿舍的新創聚落</h1>
+        <p><small>城市走讀 ·  老屋文化 · 文創生活</small></p>
+        <p><strong>從老舊眷舍到文創基地，一起閱讀台中的城市記憶與新舊融合。</strong></p>
+        <!-- mark 標示本篇閱讀焦點；使用瀏覽器內建的醒目效果。 -->
+        <p>本期焦點：<mark>老屋活化與文創生活</mark>，從歷史建築延伸到街區漫遊。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：李宜蓁｜報導整理日期：<time datetime="2026-10-14">2026 年 10 月 14 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">聚落簡介</a></li>
+            <li><a href="#highlights">景點特色與散步順序</a></li>
+            <li><a href="#table">景點比較表</a></li>
+            <li><a href="#photo">審計新村照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#map">位置地圖</a></li>
+            <li><a href="#tips">走讀小提醒</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <!-- main 是本頁唯一的主要內容區，不能放入 nav、aside、header 或 footer 裡。 -->
+    <main id="main-content">
+        <!-- article 收納可獨立理解的報導；section 是這篇報導的主題章節。 -->
+        <article aria-label="審計新村專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、聚落簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    台中審計新村位於台中市西區，前身為 <strong>臺灣省政府審計處的員工宿舍</strong>。透過政府的臺北市老舊宿舍房地再利用計畫與文創青年的進駐，這裡成功轉型為融合創業孵化與在地特色的文創聚落。
+                </p>
+                <p>
+                    園區內最具代表性的是保留了完整的<strong>老舊眷舍建築群、獨特的二樓外走廊（露台）設計</strong>。
+                    以及充滿綠意的老樹與文青小店。
+                </p>
+                <p>
+                    老宿舍的建築脈絡到青年創業的文創市集，審計新村像一份可以慢慢閱讀的城市轉生筆記。本篇以景點整理與建議散步順序，介紹這個充滿活力的聚落空間。
+                    本篇以景點整理與建議散步順序，介紹這個聚落。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>聚落地址：台中市西區民生路 368 巷。<br>閱讀重點：老屋翻新、文創市集與青創聚落。</p>
+            </section>
+
+            <hr>
+            <section id="highlights">
+                <h2>二、景點特色與散步順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>老屋建築：</strong>保留了 1960 年代典型的宿舍群風貌與洗石子外觀。</li>
+                    <li><strong>文創小店：</strong>進駐了許多手作、咖啡、選物與特色餐飲品牌。</li>
+                    <li><strong>綠意街區：</strong>園區內夾道綠樹與文青裝置藝術，提供舒適的漫步空間。</li>
+                </ul>
+
+                <h3>建議散步順序</h3>
+                <p>以下是本報導規劃的散步建議，並非官方指定路線。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                    <li>進入園區後，先留意各棟老屋前的小招牌與店家指引資訊。</li>
+                    <li>走到戶外廣場與老樹下，觀察老宿舍群的二樓走廊與建築外觀。</li>
+                    <li>前往各間文創小舖與特色小店，閱讀特色選物並感受青創活力。</li>
+                    <li>沿著戶外階梯與步道散步，最後在戶外休憩空間整理今日的觀察。</li>
+                </ol>
+            </section>
+
+            <hr>
+            <section id="table">
+                <h2>三、景點比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    延續 HW04 的需求，保留 border="1" 顯示表格與儲存格框線。
+                    border 是舊式呈現屬性，本作業因純 HTML 有框需求而保留。
+                    現代 HTML5 的樣式應改由 CSS 設定；本範例不加入 CSS。
+                    不使用表格來排版網頁，也不加入其他舊式外觀屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>審計新村三處景點的特色與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">景點名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">老宿舍建築群</th>
+                            <td>由舊員工宿舍轉型而成</td>
+                            <td>建築外觀、空間配置與歷史痕跡</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">文創商店</th>
+                            <td>集結特色選物、手作與創意品牌</td>
+                            <td>商品設計、品牌特色與店面風格</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">青創店家聚落</th>
+                            <td>由老屋改裝而成的特色品牌小店</td>
+                            <td>空間設計、招牌巧思與在地品牌風格</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+            <section id="photo">
+                <h2>四、審計新村照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；本範例使用外部圖片，需要連線才能載入。
+                        alt 描述照片內容，圖片未載入時或使用螢幕閱讀器時仍可理解。
+                        width 控制顯示寬度；未指定 height，瀏覽器依原圖比例顯示。
+                    -->
+                    <img
+                        src="   https://yuki.tw/wp-content/uploads/2018/09/20221028232327_99.jpg"
+                        alt="台中審計新村"
+                        width="480">
+                    <figcaption>
+                        審計新村是台中重要地標。
+                        圖片來源：<a href="https://www.taiwan.net.tw/m1.aspx?id=A12-00079&amp;sNo=0001016">交通部觀光署「審計新村」景點頁</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <hr>
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識台中審計新村與文創聚落，再比較影片畫面與本文介紹的景點</p>
+                <!--
+                    iframe 嵌入Virtual Taiwan 視旅台灣的審計新村介紹影片。
+                    src 使用 /embed/影片ID，title 描述內容；allowfullscreen 允許全螢幕。
+                    strict-origin-when-cross-origin 讓 HTTP 預覽傳送來源資訊。
+                    請用「HW05_開啟預覽.command」或 Live Server 開啟；file:// 缺少來源時仍可能出現錯誤 153。
+                    更換影片不會解除 YouTube 的來源要求，因此須搭配正確預覽方式。
+                -->
+                <figure>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/krtyv6c5niw?si=MH-cStXOqi8Yu8kU" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <figcaption>影片：台中最夯文青景點！審計新村到底有什麼好玩？｜發布者：Virtual Taiwan 視旅台灣。</figcaption>
+                </figure>
+                <p><a href="https://www.youtube.com/embed/krtyv6c5niw?si=MH-cStXOqi8Yu8kU" target="_blank" rel="noopener noreferrer">在 YouTube 觀看審計新村介紹（另開分頁）</a></p>
+                <p><small>影片為外部作者發布的景點介紹，現場狀況請以最新官方資訊為準。</small></p>
+                <p><small>本機預覽請使用同資料夾的 <code>HW05_開啟預覽.command</code> 或 Live Server；若直接開啟 HTML 出現錯誤 153，請改用 HTTP 預覽或上方 YouTube 連結。</small></p>
+            </section>
+
+            <!-- 位置地圖是報導的主要資訊，因此用 section；iframe 嵌入外部地圖。 -->
+            <section id="map">
+                <h2>六、位置地圖：找到審計新村</h2>
+                <p>審計新村位於臺中市西區，地址為<strong>民生路368巷</strong>。
+                    鄰近草悟道、國立臺灣美術館及勤美綠園道，適合安排街區散步與周邊景點遊覽。</p>
+                <!--
+                    Google 地圖以座標定位，q 指定緯度 24.144818、經度 120.68447，output=embed 回傳嵌入版。
+                    網址的 & 在 HTML 中寫成 &amp;。不需在本教學檔放入 API 金鑰。
+                    title 說明地圖用途；loading="lazy" 延後載入較下方的外部內容。
+                    iframe 必須寫結束標籤；width 與 height 設定顯示尺寸。
+                    地圖需連網；另提供一般地圖連結，載入失敗時仍可開啟。
+                -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.763869501039!2d120.66007972650368!3d24.144929378403262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da1c316a1fb%3A0xb8b11e36e9d43bdf!2zNDAz6Ie65Lit5biC6KW_5Y2A5piH5bmz6YeM5a-p6KiI5paw5p2R!5e0!3m2!1szh-TW!2stw!4v1791948066558!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <p><a href="https://maps.app.goo.gl/ZKrRQFfcVZSMHkxHA" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟審計新村（另開分頁）</a></p>
+                <p><small>位置查詢由 Google 地圖提供；抵達後請依現場狀況確認入口。</small></p>
+            </section>
+
+            <hr>
+            <!--
+                aside 放與報導相關、但可獨立省略的補充資訊。
+                此處是走讀提醒，不用來取代主要景點介紹。
+                純 HTML 下會依文件順序顯示；aside 不會自動移到右側。
+            -->
+            <aside id="tips" aria-labelledby="tips-title">
+                <h2 id="tips-title">走讀小提醒</h2>
+                <!-- details 與 summary 提供瀏覽器原生收折功能，不需要自寫 JavaScript。 -->
+                <details open>
+                    <summary>出發前與走讀時，記得這三件事</summary>
+                    <ul>
+                        <li>先確認營業時間： 園區內各店家的營業時間可能不同，出發前可先查詢想去的店家。</li>
+                        <li>尊重空間與店家： 拍攝店內商品或人物前，先確認是否需要取得同意，並保持通道暢通。</li>
+                        <li>放慢腳步觀察： 除了購物與拍照，也可以留意老屋的建築特色、空間變化及文創品牌的經營方式。
+
+</li>
+                    </ul>
+                </details>
+            </aside>
+
+            <hr>
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本報導依下列資料整理，散步順序與觀察建議由作者規劃。</p>
+                <!--
+                    target="_blank" 另開分頁；rel 保護開啟新頁面的關聯。
+                    網址中的 & 在 HTML 原始碼中寫成 &amp;。
+                -->
+                <ul>
+                    <li><a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/1139" target="_blank" rel="noopener noreferrer">交通部觀光署：審計新村（含圖片來源）</a></li>
+                    <li><a href="https://miniyublog.tw/shenji368/" target="_blank" rel="noopener noreferrer">小妤愛旅行 台中景點｜審計新村：12間必吃美食＆文創人氣小店</a></li>
+                    <li><a href="https://youtu.be/krtyv6c5niw?si=jNIXNbsPfQ2nUY7W" target="_blank" rel="noopener noreferrer">YouTube：Virtual Taiwan 視旅台灣 審計新村介紹影片</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 14 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾；來源與作者標示應依自己的作品修改。 -->
+    <footer>
+        <p><strong>第五次 HTML 作業｜審計新村報導</strong></p>
+        <p><small>作者：李宜蓁 · 更新日期：2026 年 10 月 14 日</small></p>
+        <p><small>文字依來源整理；照片與影片權利屬原作者。</small></p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
